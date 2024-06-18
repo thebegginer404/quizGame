@@ -1,0 +1,128 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0; 
+
+}
+
+h1{
+    color: #8c52ff;
+    font-size: 45px;
+    margin: 24px 10px 0px 14px;
+}
+
+
+hr{
+    width: 90%;
+}
+
+
+h2{
+    margin: 24px 10px 0px 14px;
+    font-size: 30px;
+}
+
+
+.start{
+    height: 70px;
+    width: 150px;
+    border-radius: 100px;
+    font-size: 30px;
+    background-color: #927dfc;
+    color: white;
+    cursor: pointer;
+    transition: 0.4s;
+    transition: all 0.4s ease; /* Smooth transition */
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    border: none; /* Remove default button border */
+}
+
+.start:hover{
+    height: 80px;
+    width: 160px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
+    background: linear-gradient(45deg, #8c52ff, #927dfc); /* Reverse gradient on hover */
+}
+
+.start::before{
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 10%, transparent 10%);
+    background-size: 15px 15px;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.start:hover::before{
+    opacity: 1;
+}
+
+.start:active{
+    transform: scale(0.95); /* Scale down slightly when active/clicked */
+}
+
+
+.main{
+    height: 65%;
+    width: 30%;
+    border: 2px solid black;
+    border-radius: 40px;
+    border: none;
+    background-color:white;
+}
+
+
+button.options  {
+    display: block;
+    width: 95%;
+    height: 10%;
+    margin: 15px 15px;
+    padding: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.next {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px auto;
+    padding: 10px 20px;
+    font-size: 26px;
+    font-weight: bold;
+    width: 23%;
+    height: 10%;
+    border-radius: 10px;
+    background-color: #927dfc;
+    cursor: pointer;
+    transition: 0.3s;
+    border: none;
+    color:rgba(23, 18, 18, 0.915);
+}
+
+.next:hover {
+    background-color: #8c52ff;
+    width: 25%;
+    height: 12%;
+    font-size: 28px;
+    color: black;
+
+}
+
+.next:active{
+    transform: scale(1.1); 
+} 
